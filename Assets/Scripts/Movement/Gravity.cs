@@ -19,7 +19,7 @@ public class Gravity : MonoBehaviour
             grounded = false;
             Ray rayTop = new Ray(transform.position, transform.up);
             RaycastHit topHit;
-            if (Physics.Raycast(rayTop, out topHit, 10f) == true)
+            if (Physics.Raycast(rayTop, out topHit, 100f) == true)
             {
                 Vector3 normal = topHit.normal;
 
